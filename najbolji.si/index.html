@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+<div id="form">
+  <div class="container">
+    <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-md-8 col-md-offset-2">
+      <div id="userform">
+        <ul class="nav nav-tabs nav-justified" role="tablist">
+          <li class="active"><a href="#osoba"  role="tab" data-toggle="tab">Kome šaljete?</a></li>
+          <li><a href="#domena"  role="tab" data-toggle="tab">Internet adresa</a></li>
+          <li><a href="#poruka"  role="tab" data-toggle="tab">Vaša poruka</a></li>
+        </ul>
+        <div class="tab-content">
+
+          <!-- ############### step 1 ###################### -->
+          <div class="tab-pane fade active in" id="osoba">
+            <h2 class="text-uppercase text-center"> Upišite ime i email osobe kojoj želite poslati poruku</h2>
+            <form id="osoba">
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="form-group">                                    
+                    <label>
+                      <span><i class="glyphicon glyphicon-user"></i></span>
+                    </label>
+                    <input type="text" class="form-control" id="first_name" oninvalid="this.setCustomValidity('Ime ili nadimak osobe kojoj šaljete poruku')" placeholder="ana, marko, anabanana ..." required>
+                  </div>
+                </div>
+    
+              </div>
+              <div class="form-group">
+                <label>
+                  <span><i class="glyphicon glyphicon-envelope"></i></span>
+                </label>
+                <input type="email" class="form-control" id="email" oninvalid="this.setCustomValidity('Email osobe kojoj želite poslati poruku')" placeholder="Email osobe kojoj šaljete poruku" required>
+              </div>
+
+              <div class="mrgn-30-top">
+                <button type="submit" class="btn btn-larger btn-block"/>
+                Dalje
+                </button>
+              </div>
+            </form>
+          </div> <!-- // step 1 -->
+
+          <!-- ############### step 2 ###################### -->
+          <div class="tab-pane fade in" id="domena">
+            <h2 class="text-uppercase text-center"> Izaberite jednu od ponuđenih internet adresa</h2>
+            <form id="domena">
+              <div class="form-group">
+                <select name="domena" class="form-control">
+                  <option disabled="" selected=""></option>
+                  <option value="coban"> coban.si </option>
+                  <option value="najbolja"> najbolja.si </option>
+                  <option value="najebo"> najebo.si </option>
+                  <option value="najljepsa"> najljepsa.si </option>
+                  <option value="naporan"> naporan.si </option>
+                  <option value="naporna"> naporna.si </option>
+                  <option value="predivna"> predivna.si </option>
+                  <option value="prelijepa"> prelijepa.si </option>
+                  <option value="sladak"> sladak.si </option>
+                  <option value="slatka"> slatka.si </option>
+                  <option value="uzasna"> uzasna.si </option>
+                  <option disabled="" selected=""></option>
+                </select>
+              </div>
+
+              <div class="mrgn-30-top">
+                <button type="submit" class="btn btn-larger btn-block"/>
+                Dalje
+                </button>
+              </div>
+            </form>
+          </div> <!-- // step 2 -->
+
+          <!-- ############### step 3 ###################### -->
+          <div class="tab-pane fade in" id="poruka">
+            <h2 class="text-uppercase text-center"> Napišite poruku koju želite da se pojavi na internet stranici.</h2>
+            <form id="poruka">
+              <div class="form-group">
+                <textarea class="form-control" placeholder="" rows="9"></textarea>
+              </div>
+
+              <div class="mrgn-30-top">
+                <button type="submit" class="btn btn-larger btn-block"/>
+                Pošalji
+                </button>
+              </div>
+            </form>
+          </div> <!-- // step 3 -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.container --> 
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<script src="../js/script.js"></script>
+</body>
